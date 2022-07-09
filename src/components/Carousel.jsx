@@ -43,7 +43,7 @@ const Container = styled.div `
             border-radius: 10px;
         }
         img{
-            max-height: 400px !important;
+            max-height: 250px !important;
         }
     }
     

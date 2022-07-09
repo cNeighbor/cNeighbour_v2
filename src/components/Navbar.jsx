@@ -1,5 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
+
 import { Fragment } from 'react'
+import {Link} from "react-router-dom"
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
@@ -50,10 +51,10 @@ export default function Example() {
       <div className="mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link to="/">
               <span className="sr-only">Workflow</span>
               <h1 className="h-8 sm:h-10">Campus Neighbour</h1>
-            </a>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
@@ -62,27 +63,27 @@ export default function Example() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Solution
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            </Link>
+            <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Our Company
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            </Link>
+            <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Resources
-            </a>
+            </Link>
 
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="/login" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Sign in
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/register"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-yellow-400 hover:bg-yellow-500"
             >
               Sign up
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -111,14 +112,14 @@ export default function Example() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
                       <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-600" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
@@ -126,14 +127,14 @@ export default function Example() {
             <div className="py-6 px-5 space-y-6">
               <div>
                 <a
-                  href="#"
+                  href="/register"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-yellow-500 hover:bg-yellow-600"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-yellow-500 hover:text-yellow-400">
+                  <a href="/login" className="text-yellow-500 hover:text-yellow-400">
                     Sign in
                   </a>
                 </p>

@@ -62,7 +62,7 @@ const Container = styled.div `
     margin: 10rem 1rem 1rem 1rem;
 
     h1{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
         color: goldenrod;
         text-align: center;
@@ -87,6 +87,6 @@ const Section = styled.div `
     background: whitesmoke;
 
     @media(max-width: 960px){
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 `
