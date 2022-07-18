@@ -6,6 +6,8 @@ import Home from "./pages/Home"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import Locate from "./pages/Locate"
+import EventPage from './pages/EventPage';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
           <Route path="/login" element={<Login />} />
 
           <Route path="/register" element={<Register />} />
+
+          <Route path="/find" element={<Locate />} />
+
+          <Route path="/event-details" element={<EventPage />} />
           
           <Route path="/" element={
             <Home />

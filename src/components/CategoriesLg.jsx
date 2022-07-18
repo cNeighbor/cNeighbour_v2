@@ -69,7 +69,7 @@ const Container = styled.div `
     }
 
     @media(max-width: 960px){
-        margin: 3rem 0.5rem 0.5rem 0.5rem;
+        margin: 3rem 0rem 0.5rem 0rem;
 
         h1{
             font-size: 30px;
@@ -87,6 +87,6 @@ const Section = styled.div `
     background: whitesmoke;
 
     @media(max-width: 960px){
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 `
