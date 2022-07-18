@@ -1,5 +1,6 @@
 
 import { LockClosedIcon } from '@heroicons/react/solid'
+import Footer from '../components/Footer'
 
 export default function Register() {
   return (
@@ -101,12 +102,14 @@ export default function Register() {
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <LockClosedIcon className="h-5 w-5 text-yellow-400 group-hover:text-yellow-300" aria-hidden="true" />
                 </span>
-                Sign in
+                Sign Up
               </button>
             </div>
           </form>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }

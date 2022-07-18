@@ -27,6 +27,7 @@ const Section = styled.div `
     background: white;
     -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     box-shadow: 0px 8px 6px #b8b9be, -3px -3px 6px #b8b9be;
+    cursor: pointer;
 
     h1{
         font-size: 40px;

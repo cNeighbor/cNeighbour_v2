@@ -1,5 +1,6 @@
 
 import { LockClosedIcon } from '@heroicons/react/solid'
+import Footer from '../components/Footer'
 
 export default function Login() {
   return (
@@ -82,6 +83,8 @@ export default function Login() {
           </form>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }

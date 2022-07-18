@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import {Link} from "react-router-dom"
 import HomeCarousel from "./Carousel"
 import Jumbotron from './Jumbotron'
 
@@ -17,10 +18,12 @@ const Header = () => {
 
                 <Sections>
                     <div>
-                        <Jumbotron 
-                            title = "Find a Place"
-                            icon = {<FontAwesomeIcon icon={faMap} />}
-                        />
+                        <Link to="find">
+                            <Jumbotron 
+                                title = "Find a Place"
+                                icon = {<FontAwesomeIcon icon={faMap} />}
+                            />
+                        </Link>
 
                         <Jumbotron 
                             title = "Place an AD"

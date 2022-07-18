@@ -26,14 +26,14 @@ const solutions = [
     icon: ChartBarIcon,
   },
   {
-    name: 'Solutions',
+    name: 'Find a place',
     description: 'Checkout our available solutions.',
-    href: '#',
+    href: 'find',
     icon: CursorClickIcon,
   },
   { name: 'Help Center', description: "Need Help? we have a 24/7 active customer support.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Download App',
+    name: 'Register Business',
     description: "Download our mobile app on your app store or Google playstore.",
     href: '#',
     icon: ViewGridIcon,
@@ -63,14 +63,14 @@ export default function Example() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Solution
+            <Link to="/find" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Find a place
             </Link>
             <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Our Company
             </Link>
             <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Resources
+              Register Business
             </Link>
 
           </Popover.Group>
@@ -112,14 +112,14 @@ export default function Example() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <Link
+                    <a
                       key={item.name}
-                      to={item.href}
+                      href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
                       <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-600" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    </Link>
+                    </a>
                   ))}
                 </nav>
               </div>
