@@ -1,14 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from "styled-components"
 
 const CarouselItem = ({ image, name }) => {
     return (
         <Container>
-            <Link to="event-details">
+            <a href="event-details#event">
                 <img src={image} alt="events" />
                 <p>{name}</p>
-            </Link>
+            </a>
         </Container>
     )
 }
@@ -16,20 +15,19 @@ const CarouselItem = ({ image, name }) => {
 export default CarouselItem
 
 const Container = styled.div `
-    height: 450px !important;
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     img {
         margin-top: 4rem;
         border-radius: 10px;
         height: 350px;
-        width: 280px;
+        width: 70%;
     }
 
     p {
-        justify-content: center;
-        align-items: center;
+        text-align: left;
         margin-top: 15px;
         font-weight: bold;
         font-size: 24px;
@@ -39,14 +37,13 @@ const Container = styled.div `
         height: 250px !important;
         margin-top: 40px;
         height: 200px;
-        width: 200px;
+        width: 100%;
 
         img{
             margin-top: 1rem;
             border: 3px solid black;
-            border-radius: 50%;
             height: 200px;
-            width: 200px;
+            width: 100%;
         }
 
         p{

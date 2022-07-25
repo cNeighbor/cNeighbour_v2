@@ -8,6 +8,8 @@ import Login from "./pages/Login"
 import Register from "./pages/Register"
 import Locate from "./pages/Locate"
 import EventPage from './pages/EventPage';
+import BusinessReg from './pages/BusinessReg';
+import BusinessList from './pages/BusinessList';
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           <Route path="/find" element={<Locate />} />
 
           <Route path="/event-details" element={<EventPage />} />
+
+          <Route path="/business-list" element={<BusinessList />} />
+
+          <Route path="/register-business" element={<BusinessReg />} />
           
           <Route path="/" element={
             <Home />

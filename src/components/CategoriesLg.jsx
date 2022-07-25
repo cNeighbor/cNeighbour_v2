@@ -2,54 +2,59 @@ import React from 'react'
 import styled from "styled-components"
 import Jumbotron from './Jumbotron'
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faBook, faCutlery, faFootball, faForward, faGamepad, faKitMedical, faLaptopCode, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+import Food from "../images/food.png"
+import Sport from "../images/sport.png"
+import Tech from "../images/tech.png"
+import Shopping from "../images/shopping.png"
+import School from "../images/school.png"
+import Fashion from "../images/fashion.png"
+import Health from "../images/health.png"
+import Religion from "../images/religion.png"
 
 const CategoriesLg = () => {
     return (
         <Container>
-            <h1>Categories</h1>
+            <h1>Searching for?</h1>
 
             <Section>
                 <Jumbotron 
                     title = "Food"
-                    icon = {<FontAwesomeIcon icon={faCutlery} />}
+                    icon = {<img src={Food} width="60" alt="food-icon" />}
                 />
 
                 <Jumbotron 
                     title = "Sports"
-                    icon = {<FontAwesomeIcon icon={faFootball} />}
+                    icon = {<img src={Sport} width="50" alt="sport-icon" />}
                 />
 
                 <Jumbotron 
-                    title = "Technology"
-                    icon = {<FontAwesomeIcon icon={faLaptopCode} />}
+                    title = "Tech"
+                    icon = {<img src={Tech} width="60" alt="tech-icon" />}
                 />
                 
                 <Jumbotron 
                     title = "Shopping"
-                    icon = {<FontAwesomeIcon icon={faShoppingBag} />}
+                    icon = {<img src={Shopping} width="60" alt="tech-icon" />}
                 />
 
                 <Jumbotron 
                     title = "School"
-                    icon = {<FontAwesomeIcon icon={faBook} />}
+                    icon = {<img src={School} width="60" alt="tech-icon" />}
                 />
 
                 <Jumbotron 
-                    title = "Gaming"
-                    icon = {<FontAwesomeIcon icon={faGamepad} />}
+                    title = "Fashion"
+                    icon = {<img src={Fashion} width="60" alt="tech-icon" />}
                 />
 
                 <Jumbotron 
                     title = "Health"
-                    icon = {<FontAwesomeIcon icon={faKitMedical} />}
+                    icon = {<img src={Health} width="60" alt="tech-icon" />}
                 />
                 
                 <Jumbotron 
-                    title = "More"
-                    icon = {<FontAwesomeIcon icon={faForward} />}
+                    title = "Religion"
+                    icon = {<img src={Religion} width="50" alt="tech-icon" />}
                 />
             </Section>
         </Container>
