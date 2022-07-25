@@ -1,14 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Jumbotron = ({title, icon}) => {
     return (
         <div>
             <Section>
-                <div>
-                    <h1>{icon}</h1>
-                    <p>{title}</p>
-                </div>
+                <Link to="/business-list" state={{data: title}}>
+                    <div>
+                        <h1>{icon}</h1>
+                        <p>{title}</p>
+                    </div>
+                </Link>
             </Section>
         </div>
     )

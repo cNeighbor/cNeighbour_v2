@@ -51,7 +51,7 @@ const Logo = styled.div `
     color: white;
 
     @media (max-width: 960px){
-        font-size: 50px;
+        font-size: 45px;
     }
 `
 
@@ -73,5 +73,17 @@ const Form =  styled.div `
         cursor: pointer;
         color: white;
         font-size: 20px;
+    }
+
+    @media (max-width: 960px) {
+        margin: 1rem;
+
+        .inputField {
+            width: 70%;
+        }
+
+        .button {
+            width: 30%;
+        }
     }
 `

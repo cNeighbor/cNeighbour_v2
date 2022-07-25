@@ -35,7 +35,7 @@ const solutions = [
   {
     name: 'Register Business',
     description: "Download our mobile app on your app store or Google playstore.",
-    href: '#',
+    href: 'register-business',
     icon: ViewGridIcon,
   }
 ]
@@ -69,7 +69,7 @@ export default function Example() {
             <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Our Company
             </Link>
-            <Link to="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <Link to="/register-business" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Register Business
             </Link>
 
