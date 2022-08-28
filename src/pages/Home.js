@@ -1,18 +1,12 @@
 import React from 'react'
-import Header from "../components/Header"
-import CategoriesLg from '../components/CategoriesLg'
-import Footer from '../components/Footer'
-import Events from '../components/Events'
-import Places from '../components/Places'
+import Ad from '../Ad'
+import Search from '../components/Search'
 
 const index = () => {
     return (
         <div>
-            <Header />
-            <CategoriesLg />
-            <Events />
-            <Places />
-            <Footer />
+           <Search />
+           <Ad text="Reserve online today, browse our wide assortment of rooms at different relaxation locations."/>
         </div>
     )
 }

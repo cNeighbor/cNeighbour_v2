@@ -3,20 +3,18 @@ import { Fragment } from 'react'
 import {Link} from "react-router-dom"
 import { Popover, Transition } from '@headlessui/react'
 import {
-  BookmarkAltIcon,
-  CalendarIcon,
   ChartBarIcon,
   CursorClickIcon,
   MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
   ShieldCheckIcon,
-  SupportIcon,
   ViewGridIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+
+import profile from "../images/profile.png"
+import location from "../images/location.png"
+import bank from "../images/bank.png"
+import history from "../images/history.png"
 
 const solutions = [
   {
@@ -56,6 +54,12 @@ export default function Example() {
               <h1 className="h-8 sm:h-10">Campus Neighbour</h1>
             </Link>
           </div>
+
+          <img src={profile} className="md:hidden" width="25" alt="user" />
+          <img src={location} className="md:hidden" width="25" alt="user" />
+          <img src={bank} className="md:hidden" width="25" alt="user" />
+          <img src={history} className="md:hidden" width="25" alt="user" />
+
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
               <span className="sr-only">Open menu</span>
