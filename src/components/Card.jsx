@@ -34,7 +34,8 @@ function Card({image, name, rating, category, duration}) {
 export default Card
 
 const Container = styled.div`
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 8px !important;
     width: 300px;
     padding: 10px;
     border-radius: 10px;

@@ -1,13 +1,55 @@
 import React from 'react'
 import styled from 'styled-components'
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 import Card from './Card'
 
 import image from "../images/place.png"
 
 function Places() {
-  return (
-    <Container>
-        <h1>Popular places</h1>
+
+  const items = [
+        <Card 
+            image={image}
+            name="Jerry Mariot Hotels"
+            rating="4.5"
+            category="Hotel"
+            duration="All day"
+        />,
+
+        <Card 
+            image={image}
+            name="Jerry Mariot Hotels"
+            rating="4.5"
+            category="Hotel"
+            duration="All day"
+        />,
+
+        <Card 
+            image={image}
+            name="Jerry Mariot Hotels"
+            rating="4.5"
+            category="Hotel"
+            duration="All day"
+        />,
+
+        <Card 
+            image={image}
+            name="Jerry Mariot Hotels"
+            rating="4.5"
+            category="Hotel"
+            duration="All day"
+        />,
+
+        <Card 
+            image={image}
+            name="Jerry Mariot Hotels"
+            rating="4.5"
+            category="Hotel"
+            duration="All day"
+        />,
+
         <Card 
             image={image}
             name="Jerry Mariot Hotels"
@@ -15,6 +57,15 @@ function Places() {
             category="Hotel"
             duration="All day"
         />
+  ]
+
+  const handleDragStart = (e) => e.preventDefault()
+
+  return (
+    <Container>
+        <h1>Popular places</h1>
+
+        <AliceCarousel mouseTracking touchTracking keyboardNavigation autoPlay autoPlayInterval={800} disableButtonsControls paddingRight={10} autoWidth items={items} />
 
         <button className='view'>View all</button>
     </Container>
