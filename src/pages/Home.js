@@ -3,6 +3,7 @@ import Ad from '../components/Ad'
 import Search from '../components/Search'
 import Carousel from '../components/Carousel'
 import Categories from '../components/Categories'
+import Places from '../components/Places'
 
 const index = () => {
     return (
@@ -12,6 +13,7 @@ const index = () => {
            <Carousel />
            <Ad text="Create an account and get access to the full function of your campus neighbour ad campaign."/>
            <Categories />
+           <Places />
         </div>
     )
 }
