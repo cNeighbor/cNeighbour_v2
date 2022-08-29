@@ -4,6 +4,7 @@ import Search from '../components/Search'
 import Carousel from '../components/Carousel'
 import Categories from '../components/Categories'
 import Places from '../components/Places'
+import Events from '../components/Events'
 
 const index = () => {
     return (
@@ -14,6 +15,7 @@ const index = () => {
            <Ad text="Create an account and get access to the full function of your campus neighbour ad campaign."/>
            <Categories />
            <Places />
+           <Events />
         </div>
     )
 }
