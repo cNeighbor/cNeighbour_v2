@@ -18,6 +18,7 @@ export default Search
 const Container = styled.div`
     display: flex;
     position: relative;
+    margin-bottom: 10px;
 
     input {
         width: 100%;
