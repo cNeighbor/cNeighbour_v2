@@ -57,7 +57,7 @@ const Component = styled.div`
     div{
         display: flex;
         justify-content: space-between;
-        margin: 35px 50px 35px 50px;
+        margin: 35px 25px;
     }
 
     .fa{
