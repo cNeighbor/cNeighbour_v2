@@ -3,10 +3,15 @@ import styled from 'styled-components';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
+import image1 from "../images/4.jpg"
+import image2 from "../images/2.jpg"
+import image3 from "../images/3.jpg"
+
 const Carousel = () => {
   const images = [
-    "https://thumbs.dreamstime.com/b/university-students-devices-preparing-classes-university-students-devices-preparing-classes-having-break-157083256.jpg",
-    "https://github.com/cNeighbor/cNeighbour_v1/blob/master/src/images/header1.jpg?raw=true",
+    image1,
+    image2,
+    image3,
     "https://github.com/cNeighbor/cNeighbour_v1/blob/master/src/images/header4.jpg?raw=true",
   ];
 
@@ -14,31 +19,43 @@ const Carousel = () => {
     <Component>
         <Fade>
             <div className="each-slide">
-            <div>
-                <img src={images[0]} />
+                <div>
+                    <img src={images[0]} />
+                </div>
+                <Text>
+                    <h1>Navigation just got easier</h1>
+                    <p>Navigate through your campus with ease as never before</p>
+                </Text>
             </div>
-            <Text>
-                <h1>Navigation just got easier</h1>
-                <p>Navigate through your campus with ease as never before</p>
-            </Text>
-            </div>
+
             <div className="each-slide">
-            <div>
-                <img src={images[1]} />
+                <div>
+                    <img src={images[1]} />
+                </div>
+                <Text>
+                    <h1>Navigation just got easier</h1>
+                    <p>Navigate through your campus with ease as never before</p>
+                </Text>
             </div>
-            <Text>
-                <h1>Navigation just got easier</h1>
-                <p>Navigate through your campus with ease as never before</p>
-            </Text>
-            </div>
+
             <div className="each-slide">
-            <div>
-                <img src={images[2]} />
+                <div>
+                    <img src={images[2]} />
+                </div>
+                <Text>
+                    <h1>Navigation just got easier</h1>
+                    <p>Navigate through your campus with ease as never before</p>
+                </Text>
             </div>
-            <Text>
-                <h1>Navigation just got easier</h1>
-                <p>Navigate through your campus with ease as never before</p>
-            </Text>
+
+            <div className="each-slide">
+                <div>
+                    <img src={images[3]} />
+                </div>
+                <Text>
+                    <h1>Navigation just got easier</h1>
+                    <p>Navigate through your campus with ease as never before</p>
+                </Text>
             </div>
         </Fade>
     </Component>
@@ -54,14 +71,15 @@ const Component = styled.div`
 
     img {
         width: 100% !important;
-        height: 330px !important;
+        height: 300px !important;
+        opacity: 0.5;
     }
 `
 
 const Text = styled.div`
     position: absolute;
     bottom: 50px;
-    color: white;
+    color: black;
     text-align: left;
     margin: 10px;
     font-family: times new roman;

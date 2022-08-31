@@ -39,7 +39,7 @@ export default BusinessCard
 const Container = styled.div`
     position: relative;
     display: grid;
-    height: 150px;
+    height: 145px;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1rem;
     padding: 10px;
@@ -49,7 +49,8 @@ const Container = styled.div`
     box-shadow: 0px 2px 2px #b8b9be, -2px -2px 2px #b8b9be;
 
     img {
-        height: 95%;
+        height: 80%;
+        width: 100%;
         border-radius: 10px;
     }
 
@@ -64,7 +65,7 @@ const Container = styled.div`
 
     .footer{
         position: absolute;
-        bottom: 25px;
+        bottom: 15px;
         display: flex;
         justify-content: space-between;
         text-align: center;
