@@ -102,6 +102,7 @@ const Container = styled.div`
   .section{
     display: flex;
     justify-content: space-between;
+    max-width: 85%;
     margin-top: 25px;
   }
 

@@ -71,7 +71,7 @@ const Component = styled.div`
 
     img {
         width: 100% !important;
-        height: 300px !important;
+        height: 330px !important;
         opacity: 0.5;
     }
 `
