@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         </Routes>
       </div>
+      <Footer />
     </Router>
     </div>
   );
