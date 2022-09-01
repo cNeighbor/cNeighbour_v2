@@ -6,6 +6,7 @@ import Categories from '../components/Categories'
 import Places from '../components/Places'
 import Events from '../components/Events'
 import Businesses from '../components/Businesses'
+import Why from '../components/Why'
 
 const index = () => {
     return (
@@ -18,6 +19,7 @@ const index = () => {
            <Places />
            <Businesses />
            <Events />
+           <Why />
         </div>
     )
 }
