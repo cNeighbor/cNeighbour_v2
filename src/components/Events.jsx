@@ -76,6 +76,7 @@ export default Events
 
 const Container = styled.div`
     margin: 20px;
+    margin-top: 40px;
     text-align: left;
 
     h1{

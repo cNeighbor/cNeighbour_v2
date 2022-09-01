@@ -5,6 +5,9 @@ import Carousel from '../components/Carousel'
 import Categories from '../components/Categories'
 import Places from '../components/Places'
 import Events from '../components/Events'
+import Businesses from '../components/Businesses'
+import Why from '../components/Why'
+import Jumbotron from '../components/Jumbotron'
 
 const index = () => {
     return (
@@ -15,7 +18,10 @@ const index = () => {
            <Ad text="Create an account and get access to the full function of your campus neighbour ad campaign."/>
            <Categories />
            <Places />
+           <Businesses />
            <Events />
+           <Why />
+           <Jumbotron />
         </div>
     )
 }
