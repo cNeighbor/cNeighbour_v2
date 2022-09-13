@@ -15,7 +15,6 @@ const index = () => {
            <Search />
            <Ad text="Reserve online today, browse our wide assortment of rooms at different relaxation locations."/>
            <Carousel />
-           <Ad text="Create an account and get access to the full function of your campus neighbour ad campaign."/>
            <Categories />
            <Places />
            <Businesses />

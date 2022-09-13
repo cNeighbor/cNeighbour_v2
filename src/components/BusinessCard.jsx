@@ -84,6 +84,29 @@ const Container = styled.div`
             }
         }
     }
+
+    @media (max-width: 320px) {
+        padding: 5px;
+        img {
+            height: 70%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .footer{
+            bottom: 2px;
+            
+            span{
+                margin-top: 10px;
+    
+                p{
+                    font-size: 12px;
+                    padding-left: 5px;
+                    margin-top: -1px;
+                }
+            }
+        }
+    }
 `
 
 const Title = styled.div`
@@ -110,11 +133,18 @@ const Title = styled.div`
 `
 
 const Buttons = styled.div`
+    display: flex;
+
     button{
-        background: #FFC70A;
+        background: #FEC70A;
         margin-left: 10px;
         padding: 2px 20px 2px 20px;
         border-radius: 20px;
         color: white;
+
+        @media (max-width: 320px) {
+            width: 60px;
+            height: 30px;
+        }
     }
 `

@@ -60,10 +60,14 @@ const Container = styled.div`
 
     .view{
         margin-top: 30px;
-        background: #FFC70A;
+        background: #FEC70A;
         width: 100%;
         height: 43px;
         border-radius: 20px;
         color: white;
+    }
+
+    @media (max-width: 320px) {
+        margin: 10px;
     }
 `

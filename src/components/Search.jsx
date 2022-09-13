@@ -1,14 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import filter from "../images/filter.png"
-
 function Search() {
   return (
     <Container>
         <i className="fa fa-search"></i>
         <input type="search" placeholder='Place, Food, Drinks, etc' />
-        <img src={filter} className="filter" alt="filter" srcset="" />
     </Container>
   )
 }
@@ -23,14 +20,14 @@ const Container = styled.div`
     input {
         width: 100%;
         margin: 0px 20px 0px 20px;
-        height: 50px;
+        height: 43px;
         border-radius: 25px;
         text-align: center;
     }
 
     .fa-search {
         position: absolute;
-        font-size: 25px;
+        font-size: 20px;
         top: 10px;
         left: 33px;
     }

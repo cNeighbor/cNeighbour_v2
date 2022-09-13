@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import logo from "../images/logo.png"
+
 function Footer() {
   return (
     <Container>
-      <h1>Campus <br />Neighbour</h1>
+      <img src={logo} className="md:hidden" width="90" alt="user" />
       <p className="desc">Campus neighbour is the #1 university companion, guiding students and growing businesses.</p>
       <Follow>
         <h3>Follow us</h3>
@@ -102,8 +104,12 @@ const Container = styled.div`
   .section{
     display: flex;
     justify-content: space-between;
-    max-width: 85%;
+    max-width: 90%;
     margin-top: 25px;
+
+    @media (max-width: 320px) {
+      max-width: 100%;
+    }
   }
 
   li{

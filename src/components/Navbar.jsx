@@ -11,7 +11,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 
-import profile from "../images/profile.png"
+import logo from "../images/logo.png"
 import location from "../images/location.png"
 import bank from "../images/bank.png"
 import history from "../images/history.png"
@@ -51,12 +51,11 @@ export default function Example() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
               <span className="sr-only">Workflow</span>
-              <h1 className="h-8 sm:h-10">Campus Neighbour</h1>
+              <img src={logo} className="md:hidden" width="90" alt="user" />
             </Link>
           </div>
 
-          <img src={profile} className="md:hidden" width="25" alt="user" />
-          <img src={location} className="md:hidden" width="25" alt="user" />
+          <img src={location} className="md:hidden ml-10" width="25" alt="user" />
           <img src={bank} className="md:hidden" width="25" alt="user" />
           <img src={history} className="md:hidden" width="25" alt="user" />
 

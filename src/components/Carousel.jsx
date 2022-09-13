@@ -3,62 +3,48 @@ import styled from 'styled-components';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
-import image1 from "../images/4.jpg"
-import image2 from "../images/2.jpg"
-import image3 from "../images/3.jpg"
+import image1 from "../images/carousel1.png"
+import image2 from "../images/carousel2.png"
+import image3 from "../images/carousel3.png"
 
 const Carousel = () => {
   const images = [
     image1,
     image2,
     image3,
-    "https://github.com/cNeighbor/cNeighbour_v1/blob/master/src/images/header4.jpg?raw=true",
   ];
 
   return (
+    <div>
     <Component>
         <Fade>
             <div className="each-slide">
                 <div>
                     <img src={images[0]} />
                 </div>
-                <Text>
-                    <h1>Navigation just got easier</h1>
-                    <p>Navigate through your campus with ease as never before</p>
-                </Text>
             </div>
 
             <div className="each-slide">
                 <div>
                     <img src={images[1]} />
                 </div>
-                <Text>
-                    <h1>Navigation just got easier</h1>
-                    <p>Navigate through your campus with ease as never before</p>
-                </Text>
             </div>
 
             <div className="each-slide">
                 <div>
                     <img src={images[2]} />
                 </div>
-                <Text>
-                    <h1>Navigation just got easier</h1>
-                    <p>Navigate through your campus with ease as never before</p>
-                </Text>
-            </div>
-
-            <div className="each-slide">
-                <div>
-                    <img src={images[3]} />
-                </div>
-                <Text>
-                    <h1>Navigation just got easier</h1>
-                    <p>Navigate through your campus with ease as never before</p>
-                </Text>
             </div>
         </Fade>
     </Component>
+
+    <Ad>
+        <div>
+            <p>Create a free account to gain full access, and be limitless. </p>
+            <button>Create account</button>
+        </div>
+    </Ad>
+    </div>
   );
 };
 
@@ -71,24 +57,33 @@ const Component = styled.div`
 
     img {
         width: 100% !important;
-        height: 330px !important;
-        opacity: 0.5;
+        height: 300px !important;
     }
 `
 
-const Text = styled.div`
-    position: absolute;
-    bottom: 50px;
-    color: black;
-    text-align: left;
-    margin: 10px;
-    font-family: times new roman;
+const Ad = styled.div`
+    background: #28282B;
+    color: white;
+    padding: 10px;
 
-    h1 {
-        font-size: 30px;
+    p{
+      font-size: 13px;
     }
 
-    p {
-        font-size: 20px;
+    div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    button{
+        background: #FEC70A;
+        border-radius: 25px;
+        width: 100%;
+        height: 43px;
+        font-size: 14px;
+
+        @media (max-width: 320px) {
+            font-size: 12px;
+        }
     }
 `
