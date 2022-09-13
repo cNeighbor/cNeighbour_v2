@@ -15,6 +15,7 @@ const Container = styled.div`
     background: #28282B;
     color: white;
     padding: 10px;
+    margin-top: 15px;
 
     p{
       font-size: 13px;

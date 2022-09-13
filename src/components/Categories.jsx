@@ -26,7 +26,7 @@ function Categories() {
 
             <span>
                 <img src={realestate} alt="realestate" />
-                <p>Real Estate</p>
+                <p>Housing</p>
             </span>
 
             <span>
@@ -71,7 +71,7 @@ const Component = styled.div`
 
     img{
         width: 60px;
-        border: 2px solid yellow;
+        border: 2px solid #FEC70A;
         border-radius: 50%;
         padding: 15px;
         font-size: 25px;
