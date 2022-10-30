@@ -16,7 +16,7 @@ function Categories() {
         <div>
             <span>
                 <img src={discover} alt="discover" />
-                <p>Discover</p>
+                <p>Directions</p>
             </span>
 
             <span>

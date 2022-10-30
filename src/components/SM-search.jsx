@@ -38,4 +38,8 @@ const Container = styled.div`
         top: 12px;
         width: 22px;
     }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 `
