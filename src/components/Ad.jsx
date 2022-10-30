@@ -20,4 +20,12 @@ const Container = styled.div`
     p{
       font-size: 13px;
     }
+
+    @media (min-width: 768px) {
+      padding: 20px;
+
+      p{
+        font-size: 15px;
+      }
+    }
 `

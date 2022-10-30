@@ -32,7 +32,7 @@ export default LgNavbar
 const Container = styled.div`
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 70px;
     padding: 20px;
 
     .logo {
