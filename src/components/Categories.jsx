@@ -67,6 +67,11 @@ const Component = styled.div`
         display: flex;
         justify-content: space-between;
         margin: 35px 25px;
+
+        @media (min-width: 768px) {
+            margin: 35px 20px;
+            justify-content: center;
+        }
     }
 
     img{
@@ -76,10 +81,36 @@ const Component = styled.div`
         padding: 15px;
         font-size: 25px;
         margin-right: 10px;
+
+        @media (min-width: 768px) {
+            width: 200px;
+            border: 1px solid #FEC70A;
+            border-radius: 15px;
+            padding: 50px;
+            margin: 30px;
+        }
+
+        @media (min-width:768px) and (max-width: 1200px) {
+            width: 150px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        img:hover {
+            cursor: pointer;
+            border: none;
+            width: 205px;
+            box-shadow: -3px -3px 7px #ffffffb2, 
+                  3px 3px 5px rgba(94, 104, 121, 0.945);
+        }
     }
     
     p{
         font-size: 13px;
         margin-top: 10px;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
     }
 `
