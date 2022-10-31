@@ -6,7 +6,6 @@ import Places from '../components/Places'
 import Events from '../components/Events'
 import Businesses from '../components/Businesses'
 import Why from '../components/Why'
-import Jumbotron from '../components/Jumbotron'
 
 const index = () => {
     return (
@@ -16,7 +15,6 @@ const index = () => {
            <Categories />
            <Businesses />
            <Why />
-           <Jumbotron />
         </div>
     )
 }
