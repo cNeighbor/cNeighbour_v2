@@ -14,9 +14,7 @@ const index = () => {
            <Ad text="Reserve online today, browse our wide assortment of rooms at different relaxation locations."/>
            <Carousel />
            <Categories />
-           <Places />
            <Businesses />
-           <Events />
            <Why />
            <Jumbotron />
         </div>

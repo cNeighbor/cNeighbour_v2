@@ -6,73 +6,77 @@ import logo from "../images/logo.png"
 function Footer() {
   return (
     <Container>
-      <img src={logo} className="md:hidden" width="90" alt="user" />
-      <p className="desc">Campus neighbour is the #1 university companion, guiding students and growing businesses.</p>
-      <Follow>
-        <h3>Follow us</h3>
-        <div>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
-        </div>
-      </Follow>
-
-      <section className="section">
-        <div>
-          <h3>Categories</h3>
-          <ul>
-            <li>Discover</li>
-            <li>Faculties</li>
-            <li>Real Estate</li>
-            <li>Church</li>
-            <li>Business</li>
-            <li>Health care</li>
-            <li>Events</li>
-            <li>Transportation</li>
-            <li>Media</li>
-          </ul>
+      <Content>
+        <div className='intro'>
+          <img src={logo} width="90" alt="user" />
+          <p className="desc">Campus neighbour is the #1 university companion, guiding students and growing businesses.</p>
+          <Follow>
+            <h3>Follow us</h3>
+            <div>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </Follow>
         </div>
 
-        <div>
-          <h3>Company</h3>
-          <ul>
-            <li>About</li>
-            <li>List Business</li>
-            <li>Referral program</li>
-            <li>Join our Discord</li>
-            <li>Become a sponsor</li>
-            <li>Health care</li>
-            <li>We're hiring</li>
-          </ul>
-        </div>
-      </section>
+        <section className="section">
+          <div>
+            <h3>Categories</h3>
+            <ul>
+              <li>Discover</li>
+              <li>Faculties</li>
+              <li>Real Estate</li>
+              <li>Church</li>
+              <li>Business</li>
+              <li>Health care</li>
+              <li>Events</li>
+              <li>Transportation</li>
+              <li>Media</li>
+            </ul>
+          </div>
 
-      <section className="section">
-        <div>
-          <h3>Legal</h3>
-          <ul>
-            <li>Terms of use</li>
-            <li>Privacy policy</li>
-            <li>License agreement</li>
-            <li>Support center</li>
-          </ul>
-        </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>List Business</li>
+              <li>Referral program</li>
+              <li>Join our Discord</li>
+              <li>Become a sponsor</li>
+              <li>Health care</li>
+              <li>We're hiring</li>
+            </ul>
+          </div>
+        </section>
 
-        <div>
-          <h3>Help & Support</h3>
-          <ul>
-            <li>Hotline</li>
-            <li>Email</li>
-            <li>Customer Service</li>
-            <li>Join our Discord</li>
-          </ul>
-        </div>
-      </section>
+        <section className="section">
+          <div>
+            <h3>Legal</h3>
+            <ul>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+              <li>License agreement</li>
+              <li>Support center</li>
+            </ul>
+          </div>
 
-      <hr />
+          <div>
+            <h3>Help & Support</h3>
+            <ul>
+              <li>Hotline</li>
+              <li>Email</li>
+              <li>Customer Service</li>
+              <li>Join our Discord</li>
+            </ul>
+          </div>
+        </section>
+      </Content>
 
-      <p className="copyright">© 2022 Campus neighbour, All rights reserved.</p>
+      <Footing>
+        <p className="copyright">© 2022 Campus neighbour, All rights reserved.</p>
+      </Footing>
 
     </Container>
   )
@@ -118,10 +122,6 @@ const Container = styled.div`
     font-size: 15px;
   }
 
-  hr{
-    margin-top: 20px;
-  }
-
   .copyright{
     color: gray;
     font-size: 14px;
@@ -129,6 +129,22 @@ const Container = styled.div`
     margin-top: 17px;
     text-align: center;
   }
+
+  @media (min-width: 768px) and (max-width: 1150px) {
+    .intro{
+      display: none;
+    } 
+  }
+`
+
+const Content = styled.div`
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 768px) and (max-width: 1150px) {
+    grid-template-columns: 1fr 1fr;
 `
 
 const Follow = styled.div`
@@ -142,4 +158,12 @@ const Follow = styled.div`
     color: gray;
     margin: 20px 0px;
   }
+`
+
+const Footing = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid gray;
 `
