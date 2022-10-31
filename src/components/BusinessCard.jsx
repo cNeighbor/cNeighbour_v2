@@ -136,7 +136,8 @@ const Buttons = styled.div`
     display: flex;
 
     button{
-        background: #FEC70A;
+        background: black;
+        color: white;
         margin-left: 10px;
         padding: 2px 20px 2px 20px;
         border-radius: 20px;

@@ -99,7 +99,8 @@ const Title = styled.div`
 
 const Buttons = styled.div`
     button{
-        background: #FEC70A;
+        background: black;
+        color: white;
         margin-left: 10px;
         padding: 5px 30px 5px 30px;
         border-radius: 20px;

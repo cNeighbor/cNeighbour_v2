@@ -9,7 +9,7 @@ function Jumbotron() {
         <br />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam deleniti ipsum, cumque!</p>
 
-        <button>Create an account</button>
+        <button>Create account</button>
     </Container>
   )
 }
@@ -17,8 +17,10 @@ function Jumbotron() {
 export default Jumbotron
 
 const Container = styled.div`
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    background: #FFC70A;
+    background: black;
     border-radius: 15px;
     margin: 15px;
     margin-top: 50px;
@@ -32,10 +34,13 @@ const Container = styled.div`
     }
 
     button{
-        width: 100%;
-        border: 1px solid white;
+        background: #FEC70A;
+        color: white;
+        font-weight: bold;
+        width: 150px;
+        height: 45px;
         border-radius: 20px;
         margin-top: 30px;
-        padding: 8px;
+        align-self: center;
     }
 `
