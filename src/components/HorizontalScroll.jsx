@@ -14,27 +14,6 @@ function HorizontalScroll() {
             category="Hotel"
             duration="All day"
           />
-          <Card
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-          />
-          <Card
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-          />
-          <Card
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-          />
         </div>
         <div className="media_group">
         <Card
@@ -44,20 +23,9 @@ function HorizontalScroll() {
           category="Hotel"
           duration="All day"
         />
-        <Card
-          image={image}
-          name="A night with slim saint"
-          rating="4.5"
-          category="Hotel"
-          duration="All day"
-        />
-        <Card
-          image={image}
-          name="A night with slim saint"
-          rating="4.5"
-          category="Hotel"
-          duration="All day"
-        />
+        </div>
+        
+        <div className="media_group">
         <Card
           image={image}
           name="A night with slim saint"
@@ -74,6 +42,8 @@ function HorizontalScroll() {
           category="Hotel"
           duration="All day"
         />
+      </div>
+      <div className="media_group">
         <Card
           image={image}
           name="A night with slim saint"
@@ -81,6 +51,8 @@ function HorizontalScroll() {
           category="Hotel"
           duration="All day"
         />
+      </div>
+      <div className="media_group">
         <Card
           image={image}
           name="A night with slim saint"
@@ -88,6 +60,35 @@ function HorizontalScroll() {
           category="Hotel"
           duration="All day"
         />
+      </div>
+      <div className="media_group">
+        <Card
+          image={image}
+          name="A night with slim saint"
+          rating="4.5"
+          category="Hotel"
+          duration="All day"
+        />
+      </div>
+      <div className="media_group">
+        <Card
+          image={image}
+          name="A night with slim saint"
+          rating="4.5"
+          category="Hotel"
+          duration="All day"
+        />
+      </div>
+      <div className="media_group">
+        <Card
+          image={image}
+          name="A night with slim saint"
+          rating="4.5"
+          category="Hotel"
+          duration="All day"
+        />
+      </div>
+      <div className="media_group">
         <Card
           image={image}
           name="A night with slim saint"
@@ -110,15 +111,21 @@ grid-auto-flow: column;
   scroll-snap-type:inline mandatory;
   scroll-padding-inline: 1rem;
   grid-auto-columns: 98%;
+  gap: 1.5rem;
   overflow-x: auto;
 overscroll-behavior-inline: contain;
-
+@media (min-width: 768px) {
+  grid-auto-columns: 23%;
+}
 
   .media_group {
     display: grid;
     grid-auto-flow: column;
     gap: 1rem;
     scroll-snap-align: start;
+    @media (min-width: 768px) {
+
+    }
   }
 `;
 

@@ -52,7 +52,7 @@ const Container = styled.figure`
 const Image = styled.div`
   img {
     inline-size: 100%;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 4px;
   }
