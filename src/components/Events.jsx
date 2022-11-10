@@ -6,68 +6,15 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Card from './Card'
 
 import image from "../images/event.png"
+import HorizontalScroll from './HorizontalScroll';
 
 function Events() {
-
-  const items = [
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />,
-
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />,
-
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />,
-
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />,
-
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />,
-
-        <Card 
-            image={image}
-            name="A night with slim saint"
-            rating="4.5"
-            category="Hotel"
-            duration="All day"
-        />
-  ]
-
-  const handleDragStart = (e) => e.preventDefault()
-
   return (
     <Container>
-        <h1>Upcoming Events</h1>
+        <div className='top_div'> <h2>Upcoming events</h2> <button className='view'>View all</button> </div>
+        <HorizontalScroll/>
 
-        <AliceCarousel mouseTracking touchTracking keyboardNavigation autoPlay autoPlayInterval={800} disableButtonsControls paddingRight={10} autoWidth items={items} />
-
-        <button className='view'>View all</button>
+        
     </Container>
   )
 }
@@ -78,15 +25,18 @@ const Container = styled.div`
     margin: 20px;
     margin-top: 40px;
     text-align: left;
+    .top_div{
+        display: flex;
+    }
 
-    h1{
+    h2{
         font-size: 25px;
+        flex-basis: 80%;
     }
 
     .view{
         margin-top: 30px;
         background: #FFC70A;
-        width: 100%;
         height: 43px;
         border-radius: 20px;
         color: white;
