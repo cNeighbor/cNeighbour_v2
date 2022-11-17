@@ -7,8 +7,7 @@ import Login from "./pages/Login"
 import Register from "./pages/Register"
 import Footer from './components/Footer';
 import LgNavbar from './components/LG-navbar';
-import Events from './components/Events';
-import HorizontalScroll from './components/HorizontalScroll';
+
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
 
         </Routes>
       </div>
-      <Events/>
       <Footer />
     </Router>
     </div>

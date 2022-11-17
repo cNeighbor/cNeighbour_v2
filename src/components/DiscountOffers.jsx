@@ -1,22 +1,20 @@
-import React from "react";
+import React from 'react';
 import styled from "styled-components";
 import Card from "./Card";
 import image from "../images/place.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
-
-function Places(){
-  const slideLeft = () => {
-    let slider = document.getElementById('place_slider');
-    slider.scrollLeft = slider.scrollLeft + 500;
-  }
-
+function DiscountOffers() {
+    const slideLeft = () => {
+        let slider = document.getElementById('place_slider');
+        slider.scrollLeft = slider.scrollLeft + 500;
+      }
   return (
     <Container>
       <section>
         <div>
-          <h2>Popular places</h2>
+          <h2>Discount offers</h2>
         </div>
         <div className="carouselNav">
           <button className="nextBtn" onClick={slideLeft}>
@@ -131,10 +129,10 @@ function Places(){
         </li>
       </MediaScroller>
     </Container>
-  );
+  )
 }
-export default Places;
 
+export default DiscountOffers;
 
 const Container = styled.div`
   section{

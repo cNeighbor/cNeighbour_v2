@@ -46,7 +46,7 @@ const Container = styled.figure`
   border-top: 1px solid rgba(27, 31, 35, 0.15);
   border-bottom: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 4px;
-  padding: 1rem;
+  padding: 0.5rem;
   gap: 1rem;
 `;
 const Image = styled.div`
@@ -57,7 +57,7 @@ const Image = styled.div`
     border-radius: 4px;
   }
 `;
-const Title = styled.div`
+const Title = styled.figcaption`
   display: flex;
   flex-direction: column;
   h3 {
