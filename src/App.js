@@ -8,6 +8,8 @@ import Register from "./pages/Register"
 import Footer from './components/Footer';
 import LgNavbar from './components/LG-navbar';
 
+
+
 function App() {
   return (
     <div className="App">

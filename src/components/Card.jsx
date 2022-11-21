@@ -6,103 +6,101 @@ import review from "../images/review.png"
 function Card({image, name, rating, category, duration}) {
   return (
     <Container>
-        <img src={image} className="image" alt="" srcset="" />
-        <Title>
-            <h3>{name}</h3>
-            <span>
-                <img src={review} width="15" alt="" srcset="" />
-                <p>{rating}</p>
-            </span>
-        </Title>
-        <p className="hotel">{category}</p>
-        <hr />
-        <span className="footer">
-            <span>
-                <i className="fa fa-clock"></i>
-                <p>{duration}</p>
-            </span>
-
-            <Buttons>
-                <button><i className="fa fa-share-alt"></i></button>
-                <button>Go</button>
-            </Buttons>
-        </span>
+      <Image>
+        <img src={image} alt={` Typical day at ${name}`} />
+      </Image>
+      <Title>
+        <h3>
+          {" "}
+          <span>{name}</span>{" "}
+          <span className="rateingSpan">
+            <img src={review} alt={rating} />
+            {rating}
+          </span>{" "}
+        </h3>
+        <p>{category}</p>
+      </Title>
+      <Buttons>
+        <div className="duration_div">
+          <i className="fa fa-clock" />
+          <p>{duration}</p>
+        </div>
+        <div className="cta_btn">
+          <button>
+            <i className="fa fa-share-alt" />
+          </button>
+          <button>Go</button>
+        </div>
+      </Buttons>
     </Container>
   )
 }
 
 export default Card
 
-const Container = styled.div`
-    margin-top: 30px;
-    margin-bottom: 8px !important;
-    width: 300px;
-    padding: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-    box-shadow: 0px 8px 6px #b8b9be, -3px -3px 6px #b8b9be;
-
-    .image{
-        width: 100%;
-    }
-
-    .hotel{
-        font-size: 14px;
-        color: gray;
-    }
-
-    .footer{
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-
-        span{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            color: gray;
-            margin-top: 10px;
-
-            p{
-                font-size: 14px;
-                padding-left: 5px;
-                margin-top: -1px;
-            }
-        }
-    }
-
-`
-
-const Title = styled.div`
+const Container = styled.figure`
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-top: 1px solid rgba(27, 31, 35, 0.15);
+  border-bottom: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 4px;
+  padding: 0.5rem;
+  gap: 1rem;
+`;
+const Image = styled.div`
+  img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+`;
+const Title = styled.figcaption`
+  display: flex;
+  flex-direction: column;
+  h3 {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-
-    h3{
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    span{
-        display: flex; 
-        text-align: center;
-        justify-content: center;
-
-        img{
-            padding-right: 10px;
-            width: 25px;
-            height: 18px;
-        }
-    }
-`
-
+    gap: 0.5rem;
+  }
+  img {
+    display: inline;
+    margin-bottom: 4px;
+  }
+  .ratingSpan {
+    display: block;
+    flex-basis: 20%;
+  }
+  p {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    color: gray;
+  }
+`;
 const Buttons = styled.div`
-    button{
-        background: black;
-        color: white;
-        margin-left: 10px;
-        padding: 5px 30px 5px 30px;
-        border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  .duration_div {
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    i {
+      margin-top: 4px;
     }
-`
+  }
+  .cta_btn {
+    flex-basis: 40%;
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      background-color: black;
+      color: white;
+      border-radius: 30px;
+      flex-basis: 50%;
+      padding: 0.2rem;
+    }
+  }
+`;
