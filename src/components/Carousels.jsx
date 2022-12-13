@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from "styled-components";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,10 +6,20 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 
 function Carousels({carouseldata, id, heading}) {
-    const slideLeft = () => {
-        let slider = document.getElementById(`${id}`);
-        slider.scrollLeft = slider.scrollLeft + 500;
-      }
+  const [clicked, setClicked] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState(1200);
+
+  const slideLeft = () => {
+    let slider = document.getElementById(`${id}`);
+
+    if(scrollDirection === 1200){
+      setScrollDirection(-1200)
+    } else{
+      setScrollDirection(1200)
+    }
+    slider.scrollLeft = slider.scrollLeft + scrollDirection;
+    setClicked(!clicked);
+  };
   return (
     <Container>
       <section>
