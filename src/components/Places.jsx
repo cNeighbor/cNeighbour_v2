@@ -5,7 +5,7 @@ import Carousels from "./Carousels";
 
 function Places(){
   return(
-    <Carousels carouseldata={PlaceData} id="place_slider" heading="Popular places"/>
+    <Carousels carouseldata={PlaceData} id="place_slider" heading="Fun places"/>
   )
 }
 export default Places;

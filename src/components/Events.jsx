@@ -5,7 +5,7 @@ import Carousels from "./Carousels";
 
 function Places(){
   return(
-    <Carousels carouseldata={EventsData} id="events_slider" heading="Upcoming events"/>
+    <Carousels carouseldata={EventsData} id="events_slider" heading="Events"/>
   )
 }
 export default Places;

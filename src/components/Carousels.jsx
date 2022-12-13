@@ -57,11 +57,16 @@ const Container = styled.div`
     justify-content: space-between;
   }
   h2{
-    @media (min-width: 961px) {
-      font-size: 2.2rem;
-      font-weight: 500;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 40px;
+
+    @media (min-width: 760px) {
+        font-size: 35px;
+        margin: 20px;
+        font-weight: bold;
     }
-    
   }
   .carouselNav {
     margin: 20px;
@@ -74,7 +79,7 @@ const Container = styled.div`
 
     .view {
       background: #ffc70a;
-      width: 100%;
+      width: 60%;
       border-radius: 20px;
       color: white;
       padding: 0.5rem;

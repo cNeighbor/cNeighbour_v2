@@ -67,6 +67,7 @@ const Content = styled.div`
 
     h1{
         font-size: 25px;
+        font-weight: bold;
         margin-bottom: 25px;
 
         @media (min-width: 760px) {

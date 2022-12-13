@@ -47,11 +47,13 @@ export default Businesses
 const Container = styled.div`
     margin: 20px;
     margin-top: 50px;
+    margin-bottom: 70px;
     text-align: left;
 
     h1{
         font-size: 25px;
-        margin-bottom: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
 
         @media (min-width: 760px) {
             font-size: 35px;
