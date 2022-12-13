@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from "styled-components";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,10 +6,20 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 
 function Carousels({carouseldata, id, heading}) {
-    const slideLeft = () => {
-        let slider = document.getElementById(`${id}`);
-        slider.scrollLeft = slider.scrollLeft + 500;
-      }
+  const [clicked, setClicked] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState(1200);
+
+  const slideLeft = () => {
+    let slider = document.getElementById(`${id}`);
+
+    if(scrollDirection === 1200){
+      setScrollDirection(-1200)
+    } else{
+      setScrollDirection(1200)
+    }
+    slider.scrollLeft = slider.scrollLeft + scrollDirection;
+    setClicked(!clicked);
+  };
   return (
     <Container>
       <section>
@@ -17,7 +27,7 @@ function Carousels({carouseldata, id, heading}) {
           <h2>{heading}</h2>
         </div>
         <div className="carouselNav">
-          <button className="nextBtn" onClick={slideLeft}>
+          <button className={clicked ? "clicked" : "nextBtn"} onClick={slideLeft}>
             <FontAwesomeIcon className="chevron" icon={faChevronRight} />
           </button>
           <button className="view">
@@ -87,15 +97,47 @@ const Container = styled.div`
         width: 20%;
       }
     }
-    .nextBtn {
-      width: 40px;
-      height: 40px;
-      border: 3px solid #ffc70a;
-      border-radius: 50%;
+    .nextBtn, .clicked {
+      visibility: hidden;
     }
+    @media (min-width: 961px){
+      .nextBtn {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #ffc70a;
+        border-radius: 50%;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        transition: 0.3s;
+      }
+      .clicked {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #ffc70a;
+        border-radius: 50%;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: 0.3s;
+      }
 
-    .chevron {
-      color: #ffc70a;
+    }
+    
+    .chevron{
+      visibility: hidden;
+    }
+    @media (min-width: 961px){
+      .chevron {
+        visibility: visible;
+        color: #ffc70a;
+      }
     }
   }
   #slider:: -webkit-scrollbar{
