@@ -16,7 +16,7 @@ const index = () => {
            <Categories />
            <DiscountOffers/>
            <Events/>
-           {/* <Businesses /> */}
+           <Businesses />
            <Places/>
            <Why />
         </div>

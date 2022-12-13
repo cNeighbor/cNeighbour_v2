@@ -68,6 +68,11 @@ const Content = styled.div`
     h1{
         font-size: 25px;
         margin-bottom: 25px;
+
+        @media (min-width: 760px) {
+            font-size: 35px;
+            font-weight: bold;
+        }
     }
 
     .list {
