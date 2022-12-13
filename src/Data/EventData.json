@@ -54,47 +54,5 @@
         "rating": "4.5",
         "category": "Hotel",
         "duration": "All day"
-    },
-    {   "id":"",
-        "image": "images/place.png",
-        "name": "Old caro",
-        "rating": "2.5",
-        "category": "Lecture hall",
-        "duration": "All day"
-    },
-    {   "id":"",
-        "image": "images/event.png",
-        "name": "Hilltop",
-        "rating": "3.5",
-        "category": "Lecture hall",
-        "duration": "All day"
-    },
-    {   "id":"",
-        "image": "images/place.png",
-        "name": "Odim",
-        "rating": "4.5",
-        "category": "Lodge",
-        "duration": "5 hours"
-    },
-    {   "id":"",
-        "image": "images/place.png",
-        "name": "Starrr",
-        "rating": "2.5",
-        "category": "Lodge",
-        "duration": "5 hours"
-    },
-    {   "id":"",
-        "image": "images/event.png",
-        "name": "Beach",
-        "rating": "3.0",
-        "category": "Lodge",
-        "duration": "7 hours"
-    },
-    {   "id":"",
-        "image": "images/place.png",
-        "name": "Odenugwe",
-        "rating": "1.5",
-        "category": "Lodge",
-        "duration": "2 hours"
     }
 ]
