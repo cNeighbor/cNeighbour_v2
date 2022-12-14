@@ -83,28 +83,39 @@ const Component = styled.div`
         margin-right: 10px;
 
         @media (min-width: 768px) {
-            width: 200px;
+            width: 150px;
             border: 1px solid #FEC70A;
             border-radius: 15px;
             padding: 50px;
             margin: 30px;
         }
-
-        @media (min-width:768px) and (max-width: 1200px) {
-            width: 150px;
+        @media (min-width:1200px){
+            width: 200px;
         }
+
+        
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px)   {
+        img:hover {
+            cursor: pointer;
+            border: none;
+            width: 155px;
+            box-shadow: -3px -3px 7px #ffffffb2, 
+            3px 3px 5px rgba(94, 104, 121, 0.945);
+            transition:0.3s;
+        }
+    }
+    @media (min-width: 1200px)   {
         img:hover {
             cursor: pointer;
             border: none;
             width: 205px;
             box-shadow: -3px -3px 7px #ffffffb2, 
-                  3px 3px 5px rgba(94, 104, 121, 0.945);
+            3px 3px 5px rgba(94, 104, 121, 0.945);
+            transition:0.3s;
         }
     }
-    
     p{
         font-size: 13px;
         margin-top: 10px;

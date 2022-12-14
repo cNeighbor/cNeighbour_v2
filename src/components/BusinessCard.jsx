@@ -6,34 +6,34 @@ import review from "../images/review.png"
 function BusinessCard({image, name, rating, category, duration}) {
   return (
     <Container>
-        <img src={image} className="image" alt="" srcset="" />
+      <img src={image} className="image" alt="" srcset="" />
 
-        <div>
-            <Title>
-                <h3>{name}</h3>
-                <span>
-                    <img src={review} width="15" alt="" srcset="" />
-                    <p>{rating}</p>
-                </span>
-            </Title>
-            <p className="hotel">{category}</p>
-            <hr />
-            <span className="footer">
-                <span>
-                    <i className="fa fa-clock"></i>
-                    <p>{duration}</p>
-                </span>
-
-                <Buttons>
-                    <button><i className="fa fa-phone"></i></button>
-                    <button>Go</button>
-                </Buttons>
-            </span>
-        </div>
+      <div>
+        <Title>
+          <h3>{name}</h3>
+          <span>
+            <img src={review} width="15" alt="" srcset="" />
+            <p>{rating}</p>
+          </span>
+        </Title>
+        <p className="hotel">{category}</p>
+        <hr />
+        <Buttons>
+          <div className="duration_div">
+            <i className="fa fa-clock"></i>
+            <p>{duration}</p>
+          </div>
+          <div className="cta_btns">
+            <button>
+              <i className="fa fa-phone"></i>
+            </button>
+            <button>Go</button>
+          </div>
+        </Buttons>
+      </div>
     </Container>
-  )
+  );
 }
-
 export default BusinessCard
 
 const Container = styled.div`
@@ -133,19 +133,32 @@ const Title = styled.div`
 `
 
 const Buttons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5%;
+  padding-bottom:2.5%;
+
+  .duration_div {
     display: flex;
-
-    button{
-        background: black;
-        color: white;
-        margin-left: 10px;
-        padding: 2px 20px 2px 20px;
-        border-radius: 20px;
-        color: white;
-
-        @media (max-width: 320px) {
-            width: 60px;
-            height: 30px;
-        }
+    gap: 0.5rem;
+    color: gray;
+    i {
+      margin-top: 4px;
     }
-`
+  }
+
+  .cta_btns {
+    flex-basis: 40%;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    flex-basis: 50%;
+    padding: 0.2rem 0.85rem;
+    height: 30px;
+  }
+`;
