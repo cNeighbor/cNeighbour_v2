@@ -101,6 +101,7 @@ const Buttons = styled.div`
       border-radius: 30px;
       flex-basis: 50%;
       padding: 0.2rem;
+      height: 30px;
     }
   }
 `;

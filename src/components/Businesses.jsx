@@ -100,7 +100,7 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-    @media (min-width: 760px){
+    @media (min-width: 961px){
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2rem;
