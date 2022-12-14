@@ -54,7 +54,7 @@ function Why() {
 export default Why
 
 const Container = styled.div`
-    @media (min-width: 768px) {
+    @media (min-width: 961px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
