@@ -7,8 +7,8 @@ import realestate from "../images/realestate.png"
 import church from "../images/church.png"
 import business from "../images/business.png"
 import health from "../images/health.png"
-import events from "../images/events.png"
 import more from "../images/more.png"
+import gist from "../images/gist.png";
 
 function Categories() {
   return (
@@ -47,8 +47,8 @@ function Categories() {
             </span>
 
             <span>
-                <img src={events} alt="events" />
-                <p>Events</p>
+                <img src={gist} alt="events" />
+                <p>Gist</p>
             </span>
 
             <span>
